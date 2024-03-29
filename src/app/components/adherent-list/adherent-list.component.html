@@ -1,12 +1,13 @@
 <p-toolbar styleClass="mb-4 gap-2">
     <ng-template pTemplate="left">
-        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+        <button pButton pRipple label="New adherent" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
         <button pButton pRipple label="Courses list" icon="pi pi-angle-double-left" class="p-button-info mr-2" (click)="goBack()"></button>
     </ng-template>
 </p-toolbar>
 <p-dialog [(visible)]="visible" [style]="{width: '50vw'}">
     <ng-template pTemplate="headless">
         <div class="card">
+            <h3>{{ saveBtnDispalay ? 'Adherent updated:' : 'Add new adherent:' }}</h3>
             <div class="input-container">
                 <span class="p-float-label">
                     <input pInputText id="firstName" [(ngModel)]="firstName" name="firstName" required minlength="3" #firstNametag="ngModel" [style]="{width: '100%'}"/>

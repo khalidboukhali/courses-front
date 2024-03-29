@@ -1,11 +1,12 @@
 <p-toolbar styleClass="mb-4 gap-2">
     <ng-template pTemplate="left">
-        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+        <button pButton pRipple label="New course" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
     </ng-template>
 </p-toolbar>
 <p-dialog [(visible)]="visible" [style]="{width: '50vw'}">
     <ng-template pTemplate="headless">
         <div class="card">
+            <h3>{{ saveBtnDispalay ? 'Course Updated:' : 'Add new Course:' }}</h3>
             <div class="input-container">
                 <span class="p-float-label">
                     <input pInputText id="courseName" [(ngModel)]="courseName" name="courseName" required minlength="3" #name="ngModel" [style]="{width: '100%'}"/>
