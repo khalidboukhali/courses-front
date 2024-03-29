@@ -1,0 +1,29 @@
+/* Styling the input containers */
+.input-container {
+    margin: 2rem;
+}
+
+.date{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    margin-left: 8px;
+}   
+
+.card{
+    padding: 1rem;
+    background-image: radial-gradient(circle at left top, aliceblue, gray);
+    border-radius: 12px;
+}
+
+.p-float-label{
+    margin-bottom: .5rem;
+}
+
+.messages{
+    display: flex;
+    justify-content: space-between;
+}
